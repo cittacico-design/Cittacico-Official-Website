@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Cittàcico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="custom-cursor custom-cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor custom-cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-util">
+        <div class="header-util-inner">
+          <span class="header-tagline">New York Maison · Since 2026</span>
+          <div class="header-util-links">
+            <a href="client-services.html">Client Services</a>
+            <a href="locations.html">Locations</a>
+          </div>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <div class="nav-cluster nav-cluster--left">
+          <div class="nav-item nav-item--collections has-mega">
+            <a href="collections.html" class="nav-primary">Collections</a>
+          </div>
+          <div class="nav-item nav-item--house has-mega">
+            <a href="about.html" class="nav-primary">The House</a>
+          </div>
+        </div>
+        <a class="logo logo--center" href="index.html">CITTÀCICO</a>
+        <div class="nav-cluster nav-cluster--right">
+          <a class="nav-simple" href="archives.html">Archives</a>
+          <a class="nav-simple" href="contact.html">Contact</a>
+          <a class="nav-shop" href="shop.html">Shop</a>
+        </div>
+        <button type="button" class="mobile-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mega-panel mega-panel--collections" role="region" aria-label="Collections">
+        <div class="mega-inner">
+          <div class="mega-col">
+            <p class="mega-col-label">Universes</p>
+            <div class="mega-links">
+              <a href="collection-fashion.html"
+                >Fashion<span class="hint">Ready-to-wear</span></a
+              >
+              <a href="collection-accessories.html"
+                >Accessories<span class="hint">Leather goods &amp; objects</span></a
+              >
+              <a href="collection-fragrance.html"
+                >Fragrance<span class="hint">Parfums de maison</span></a
+              >
+            </div>
+          </div>
+          <div class="mega-col">
+            <p class="mega-col-label">Discover</p>
+            <div class="mega-links">
+              <a href="shop.html">Shop<span class="hint">Online boutique</span></a>
+              <a href="collections.html">All collections</a>
+              <a href="archives.html">Campaigns &amp; stories</a>
+            </div>
+          </div>
+          <a class="mega-feature" href="collections.html">
+            <span class="mega-feature-kicker">The world of Cittàcico</span>
+            <span class="mega-feature-title">One maison, many expressions</span>
+            <p class="mega-feature-desc">
+              Cross from silhouettes to objet and scent — composed as a single narrative.
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="mega-panel mega-panel--house" role="region" aria-label="The House">
+        <div class="mega-inner">
+          <div class="mega-col">
+            <p class="mega-col-label">Maison</p>
+            <div class="mega-links">
+              <a href="about.html">Our story</a>
+              <a href="archives.html">Archives &amp; campaigns</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <p class="mega-col-label">Services</p>
+            <div class="mega-links">
+              <a href="client-services.html">Client services<span class="hint">Care &amp; appointments</span></a>
+              <a href="contact.html">Contact the house<span class="hint">Messages &amp; enquiries</span></a>
+              <a href="locations.html">Locations<span class="hint">Boutiques &amp; studios</span></a>
+            </div>
+          </div>
+          <a class="mega-feature" href="about.html">
+            <span class="mega-feature-kicker">Heritage</span>
+            <span class="mega-feature-title">The art of the Italian atelier</span>
+            <p class="mega-feature-desc">
+              Slow craft, lasting forms — made for collectors of beauty, not seasons.
+            </p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-overlay" aria-hidden="true">
+      <div class="mobile-overlay-inner">
+        <div class="mobile-nav-group">
+          <span class="mobile-nav-label">Collections</span>
+          <div class="mobile-sub">
+            <a href="collections.html">All collections</a>
+            <a href="collection-fashion.html">Fashion</a>
+            <a href="collection-accessories.html">Accessories</a>
+            <a href="collection-fragrance.html">Fragrance</a>
+          </div>
+        </div>
+        <div class="mobile-nav-group">
+          <span class="mobile-nav-label">The House</span>
+          <a href="about.html">Our story</a>
+          <a href="archives.html">Archives</a>
+        </div>
+        <div class="mobile-nav-group">
+          <span class="mobile-nav-label">Services</span>
+          <a href="client-services.html">Client services</a>
+          <a href="contact.html">Contact</a>
+          <a href="locations.html">Locations</a>
+        </div>
+        <div class="mobile-nav-group">
+          <a href="shop.html" class="mobile-nav-cta">Shop</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="page-section" data-checkout-page>
+      <div class="container">
+        <p class="label-upper reveal">Online boutique</p>
+        <h1 class="page-title reveal" style="margin-bottom: 0.5rem">Checkout</h1>
+        <p class="checkout-lede reveal">
+          A guided flow for the prototype boutique — identification, delivery, and payment preview.
+        </p>
+
+        <div class="checkout-empty reveal" data-checkout-empty hidden>
+          <p>Your bag is empty. Add pieces from the shop to continue.</p>
+          <a href="shop.html" class="btn-checkout-primary">Return to shop</a>
+        </div>
+
+        <div class="checkout-layout reveal" data-checkout-flow hidden>
+          <div class="checkout-main-col">
+            <ol class="checkout-progress" aria-label="Checkout steps">
+              <li data-checkout-indicator="1" class="is-current">
+                <span class="checkout-progress-num">1</span>
+                <span class="checkout-progress-label">Identification</span>
+              </li>
+              <li data-checkout-indicator="2">
+                <span class="checkout-progress-num">2</span>
+                <span class="checkout-progress-label">Delivery</span>
+              </li>
+              <li data-checkout-indicator="3">
+                <span class="checkout-progress-num">3</span>
+                <span class="checkout-progress-label">Payment</span>
+              </li>
+            </ol>
+
+            <form id="checkout-form" class="checkout-form" novalidate>
+              <div class="checkout-step is-active" data-checkout-step="1">
+                <p class="checkout-step-intro">
+                  Enter your email to continue as a guest, or sign in when maison accounts are
+                  available.
+                </p>
+                <p class="checkout-required-note">Required fields are marked with *</p>
+                <div class="form-stack">
+                  <label class="checkout-field">
+                    <span class="checkout-field-label">Email *</span>
+                    <input
+                      class="form-field"
+                      type="email"
+                      name="email"
+                      autocomplete="email"
+                      required
+                      placeholder="name@example.com"
+                    />
+                  </label>
+                  <label class="checkout-checkbox">
+                    <input type="checkbox" name="marketing" value="yes" />
+                    <span
+                      >I have read the privacy policy and agree to receive occasional maison news by
+                      email.</span
+                    >
+                  </label>
+                </div>
+                <div class="checkout-actions">
+                  <button type="button" class="btn-checkout-primary" data-checkout-next>
+                    Continue as guest
+                  </button>
+                </div>
+                <p class="checkout-footnote">
+                  If your email matches an existing Cittàcico profile, your order may be linked
+                  automatically once accounts go live.
+                </p>
+
+                <div class="checkout-divider"><span>or</span></div>
+
+                <p class="checkout-alt-label">Sign in to your maison account</p>
+                <div class="checkout-actions checkout-actions--row">
+                  <button type="button" class="btn-checkout-outline" disabled aria-disabled="true">
+                    Sign in
+                  </button>
+                  <button type="button" class="btn-checkout-outline" disabled aria-disabled="true">
+                    Sign in with Google
+                  </button>
+                </div>
+                <p class="checkout-footnote">Account sign-in is not enabled in this prototype.</p>
+              </div>
+
+              <div class="checkout-step" data-checkout-step="2" hidden>
+                <p class="checkout-step-intro">Where should we deliver your selection?</p>
+                <div class="form-stack">
+                  <label class="checkout-field">
+                    <span class="checkout-field-label">Full name *</span>
+                    <input
+                      class="form-field"
+                      type="text"
+                      name="fullName"
+                      autocomplete="name"
+                      required
+                    />
+                  </label>
+                  <label class="checkout-field">
+                    <span class="checkout-field-label">Address line 1 *</span>
+                    <input
+                      class="form-field"
+                      type="text"
+                      name="address1"
+                      autocomplete="address-line1"
+                      required
+                    />
+                  </label>
+                  <label class="checkout-field">
+                    <span class="checkout-field-label">Address line 2</span>
+                    <input
+                      class="form-field"
+                      type="text"
+                      name="address2"
+                      autocomplete="address-line2"
+                    />
+                  </label>
+                  <div class="checkout-field-row">
+                    <label class="checkout-field">
+                      <span class="checkout-field-label">City *</span>
+                      <input class="form-field" type="text" name="city" autocomplete="address-level2" required />
+                    </label>
+                    <label class="checkout-field">
+                      <span class="checkout-field-label">State / region *</span>
+                      <input
+                        class="form-field"
+                        type="text"
+                        name="region"
+                        autocomplete="address-level1"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="checkout-field-row">
+                    <label class="checkout-field">
+                      <span class="checkout-field-label">Postal code *</span>
+                      <input
+                        class="form-field"
+                        type="text"
+                        name="postal"
+                        autocomplete="postal-code"
+                        required
+                      />
+                    </label>
+                    <label class="checkout-field">
+                      <span class="checkout-field-label">Country *</span>
+                      <input
+                        class="form-field"
+                        type="text"
+                        name="country"
+                        autocomplete="country-name"
+                        required
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="checkout-actions checkout-actions--split">
+                  <button type="button" class="btn-checkout-ghost" data-checkout-back>Back</button>
+                  <button type="button" class="btn-checkout-primary" data-checkout-next>
+                    Continue to payment
+                  </button>
+                </div>
+              </div>
+
+              <div class="checkout-step" data-checkout-step="3" hidden>
+                <p class="checkout-step-intro">
+                  Card details are for layout only — no charge is processed in this prototype. Apple Pay
+                  and Stripe will be connected when the boutique goes live.
+                </p>
+                <div class="checkout-actions checkout-actions--stack checkout-wallet-row">
+                  <button type="button" class="btn-apple-pay" disabled aria-disabled="true">
+                    <span class="btn-apple-pay-label">Apple Pay</span>
+                  </button>
+                  <button type="button" class="btn-stripe" disabled aria-disabled="true">
+                    Pay with Stripe
+                  </button>
+                </div>
+                <p class="checkout-pay-divider"><span>or pay by card</span></p>
+                <div class="form-stack">
+                  <label class="checkout-field">
+                    <span class="checkout-field-label">Name on card *</span>
+                    <input class="form-field" type="text" name="cardName" autocomplete="cc-name" required />
+                  </label>
+                  <label class="checkout-field">
+                    <span class="checkout-field-label">Card number *</span>
+                    <input
+                      class="form-field"
+                      type="text"
+                      name="cardNumber"
+                      inputmode="numeric"
+                      autocomplete="cc-number"
+                      placeholder="0000 0000 0000 0000"
+                      required
+                    />
+                  </label>
+                  <div class="checkout-field-row">
+                    <label class="checkout-field">
+                      <span class="checkout-field-label">Expiry *</span>
+                      <input
+                        class="form-field"
+                        type="text"
+                        name="cardExp"
+                        autocomplete="cc-exp"
+                        placeholder="MM / YY"
+                        required
+                      />
+                    </label>
+                    <label class="checkout-field">
+                      <span class="checkout-field-label">Security code *</span>
+                      <input
+                        class="form-field"
+                        type="text"
+                        name="cardCvc"
+                        autocomplete="cc-csc"
+                        inputmode="numeric"
+                        required
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="checkout-actions checkout-actions--stack">
+                  <button type="submit" class="btn-checkout-primary btn-checkout-primary--wide">
+                    Complete order
+                  </button>
+                  <button type="button" class="checkout-text-btn" data-checkout-simulate-failure>
+                    Preview a declined payment
+                  </button>
+                </div>
+                <div class="checkout-actions checkout-actions--split" style="margin-top: 1.5rem">
+                  <button type="button" class="btn-checkout-ghost" data-checkout-back>Back</button>
+                  <a href="shop.html" class="checkout-continue-link">Continue shopping</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="checkout-sidebar" aria-label="Order summary">
+            <div class="checkout-sidebar-head">
+              <h2 class="checkout-sidebar-title">
+                Your selection <span data-checkout-count>(0)</span>
+              </h2>
+              <a href="shop.html" class="checkout-sidebar-modify">Modify</a>
+            </div>
+            <div class="checkout-line-items" data-checkout-line-items></div>
+            <div class="checkout-totals">
+              <div class="checkout-total-row">
+                <span>Subtotal</span>
+                <span data-checkout-subtotal>$0.00</span>
+              </div>
+              <div class="checkout-total-row">
+                <span>Shipping</span>
+                <span data-checkout-shipping>$0.00</span>
+              </div>
+              <div class="checkout-total-row checkout-total-row--tax">
+                <span>Tax</span>
+                <span data-checkout-tax>$0.00</span>
+              </div>
+              <p class="checkout-tax-note">Tax will be calculated from your delivery address.</p>
+              <div class="checkout-total-row checkout-total-row--grand">
+                <span>Total</span>
+                <strong data-checkout-total>$0.00</strong>
+              </div>
+            </div>
+            <ul class="checkout-trust" aria-label="Service information">
+              <li>
+                <span class="checkout-trust-title">Payment</span>
+                <span class="checkout-trust-desc">Card, Apple Pay, and other wallets via Stripe when live</span>
+              </li>
+              <li>
+                <span class="checkout-trust-title">Delivery</span>
+                <span class="checkout-trust-desc">Complimentary standard delivery (prototype)</span>
+              </li>
+              <li>
+                <span class="checkout-trust-title">Returns</span>
+                <span class="checkout-trust-desc">Complimentary returns within policy</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a class="logo" href="index.html">CITTÀCICO</a>
+          <p class="footer-tagline">
+            A New York maison for fashion, objects, and fragrance — composed with patience, worn
+            with intention.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="collections.html">All collections</a></li>
+            <li><a href="collection-fashion.html">Fashion</a></li>
+            <li><a href="collection-accessories.html">Accessories</a></li>
+            <li><a href="collection-fragrance.html">Fragrance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>The House</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="client-services.html">Client services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>© 2026 Cittàcico. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Cookie settings</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
