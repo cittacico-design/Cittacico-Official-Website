@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      /* github-pages-base-fix */
+      (function () {
+        var h = location.hostname;
+        if (!h.endsWith("github.io")) return;
+        var parts = location.pathname.split("/").filter(Boolean);
+        if (!parts.length) return;
+        var seg = parts[0];
+        if (seg.indexOf(".") !== -1) return;
+        var el = document.createElement("base");
+        el.setAttribute("href", "/" + seg + "/");
+        document.head.insertBefore(el, document.head.firstChild);
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion | Cittàcico</title>
@@ -10,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -253,6 +267,6 @@
     </footer>
 
     <script src="js/products.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

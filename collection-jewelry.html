@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      /* github-pages-base-fix */
+      (function () {
+        var h = location.hostname;
+        if (!h.endsWith("github.io")) return;
+        var parts = location.pathname.split("/").filter(Boolean);
+        if (!parts.length) return;
+        var seg = parts[0];
+        if (seg.indexOf(".") !== -1) return;
+        var el = document.createElement("base");
+        el.setAttribute("href", "/" + seg + "/");
+        document.head.insertBefore(el, document.head.firstChild);
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="refresh" content="0; url=collection-accessories.html" />
     <title>Redirect</title>
